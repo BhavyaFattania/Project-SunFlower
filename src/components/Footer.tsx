@@ -21,7 +21,7 @@ const contributors = [
   },
   {
     name: "Meera Mistry",
-    role: "HR",
+    role: "R&D",
     image: Contributor2.src,
     Linkedin: "https://www.linkedin.com/in/meera-mistry-263339285/",
     FaGithub: "https://github.com/Meera1706"
