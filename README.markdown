@@ -19,6 +19,9 @@ The system leverages advanced NLP, generative AI, and computer vision to offer a
   - **2025-P039 (RASP - AI, LLM - Generative AI)**: Showcases generative AI with Llama-3.2-1B and LoRA optimization.
   - **2025-P050 (IndicNLP)**: Demonstrates NLP expertise with DistilBERT for emotion classification.
 
+## Access the Project code from the google drive link provided 
+((https://drive.google.com/drive/folders/1D7fbn5aCGybKKcpud_C-PT1OxCMj2Cct?usp=sharing)).
+
 ## Project Structure
 - `src/`: Core implementation code for emotion detection and response generation.
   - `text_emotion_detection.py`: DistilBERT model for text-based emotion classification.
