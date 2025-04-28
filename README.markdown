@@ -45,60 +45,6 @@ The system leverages advanced NLP, generative AI, and computer vision to offer a
 - **Response Generation**: Fine-tuned Llama-3.2-1B with LoRA, using 1.7M trainable parameters (0.1377% of 1.24B total).
 - **User Engagement**: Gradio demo increased interaction time by 40% compared to text-only chatbots.
 
-## Setup
-### Prerequisites
-- Python 3.8+
-- CUDA-enabled GPU (recommended, 8GB VRAM minimum)
-- Git
-
-### Installation
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/yourusername/multimodal-mental-health-ai-agent.git
-   cd multimodal-mental-health-ai-agent
-   ```
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   Dependencies include `torch`, `transformers`, `gradio`, `opencv-python`, `pyaudio`, and `peft`.
-
-3. **Download Datasets**:
-   - **Emotion Dataset**: ~20,000 text samples ([Kaggle](https://www.kaggle.com/datasets/praveengovi/emotions-dataset-for-nlp)).
-   - **RAVDESS**: ~720 audio samples ([Zenodo](https://zenodo.org/records/1188976)).
-   - **FER2013**: ~35,000 images ([Kaggle](https://www.kaggle.com/datasets/msambare/fer2013)).
-   - **EmpatheticDialogues**: ~20,000 dialogues ([Hugging Face](https://huggingface.co/datasets/empathetic_dialogues)).
-   Place datasets in the `data/` directory or update paths in the code.
-
-4. **Download Pre-trained Models**:
-   - DistilBERT: `distilbert-base-uncased` (via Hugging Face).
-   - Llama-3.2-1B-Instruct: Requires access from Meta AI (apply [here](https://ai.meta.com/llama/)).
-   - Fine-tuned weights are not included due to size; retrain using scripts in `src/`.
-
-### Training
-1. **Text Model**:
-   ```bash
-   python src/text_emotion_detection.py --data_path data/emotion_dataset --output_dir models/distilbert
-   ```
-2. **Voice Model**:
-   ```bash
-   python src/voice_emotion_detection.py --data_path data/ravdess --output_dir models/voice_emotion_cnn
-   ```
-3. **Facial Model**:
-   ```bash
-   python src/facial_emotion_detection.py --data_path data/fer2013 --output_dir models/emotion_cnn
-   ```
-4. **Response Generation**:
-   ```bash
-   python src/response_generation.py --data_path data/empathetic_dialogues --output_dir models/llama
-   ```
-
-### Running the Demo
-1. Launch the Gradio interface:
-   ```bash
-   python app.py
-   ```
-2. Access the demo at `http://localhost:7860` or use the hosted version: [t.ly/mmha-demo].
 
 ## Usage
 - **Text Input**: Enter text (e.g., "I had a terrible day at work") to detect emotions and receive an empathetic response.
@@ -107,10 +53,10 @@ The system leverages advanced NLP, generative AI, and computer vision to offer a
 - **Response**: The system combines inputs to generate a supportive response (e.g., "I’m sorry you’re feeling this way…").
 
 ## Resources
-- **Website**: [t.ly/mmha]
-- **Demo**: [t.ly/mmha-demo]
-- **Documentation**: [t.ly/mmha-doc]
-- **HackTheSpring’25 Presentation**: Available upon request.
+- **Website**: [https://project-sun-flower-zeta.vercel.app/]
+- **Demo**: [https://drive.google.com/file/d/1v20ulyd85GPoe6EaURsl2vxX8FKx6vud/view?usp=sharing]
+- **Documentation**: [https://drive.google.com/drive/folders/1D7fbn5aCGybKKcpud_C-PT1OxCMj2Cct?usp=sharing]
+
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request with improvements.
