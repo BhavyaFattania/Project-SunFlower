@@ -20,7 +20,7 @@ The system leverages advanced NLP, generative AI, and computer vision to offer a
   - **2025-P050 (IndicNLP)**: Demonstrates NLP expertise with DistilBERT for emotion classification.
 
 ## Access the Project code from the google drive link provided 
-((https://drive.google.com/drive/folders/1D7fbn5aCGybKKcpud_C-PT1OxCMj2Cct?usp=sharing)).
+
 
 ## Project Structure
 - `src/`: Core implementation code for emotion detection and response generation.
@@ -52,10 +52,7 @@ The system leverages advanced NLP, generative AI, and computer vision to offer a
 - **Facial Input**: Upload an image or use a webcam to detect facial emotions.
 - **Response**: The system combines inputs to generate a supportive response (e.g., "I’m sorry you’re feeling this way…").
 
-## Resources
-- **Website**: [https://project-sun-flower-zeta.vercel.app/]
-- **Demo**: [https://drive.google.com/file/d/1v20ulyd85GPoe6EaURsl2vxX8FKx6vud/view?usp=sharing]
-- **Documentation**: [https://drive.google.com/drive/folders/1D7fbn5aCGybKKcpud_C-PT1OxCMj2Cct?usp=sharing]
+
 
 
 ## Contributing
